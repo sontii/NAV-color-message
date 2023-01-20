@@ -1,0 +1,16 @@
+{
+  "name": "NAV tárhely kiemelő",
+  "version": "1.3",
+  "manifest_version": 2,
+   
+  "description": "NAV tárhely üzeneteinek kiemelése.",
+    "browser_action": {
+    "default_icon": "icon.png"
+   },
+
+  "content_scripts": [
+    {
+    "matches": ["*://tarhely.gov.hu/*"],
+  "js": [ "jquery.min.js", "szuro.js" ]
+  }]
+}
